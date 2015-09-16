@@ -22,6 +22,7 @@ module.exports = function () {
         // 	}
 
         if(creep.memory.role == 'guard') {
+            console.log(creep.name + " guarding!");
             guard(creep);
         }
     }
