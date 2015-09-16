@@ -1,0 +1,19 @@
+{
+  "name": "screeps_scripts",
+  "version": "0.0.1",
+  "description": "Screeps AI",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dansabo/screeps_scripts.git"
+  },
+  "author": "Daniel Sabo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dansabo/screeps_scripts/issues"
+  },
+  "homepage": "https://github.com/dansabo/screeps_scripts"
+}

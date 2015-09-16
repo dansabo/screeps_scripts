@@ -1,0 +1,5 @@
+.idea
+Gruntfile.js
+*.log
+lib
+node_modules
