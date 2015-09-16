@@ -8,7 +8,7 @@ module.exports = function () {
         var creep = Game.creeps[name];
 
         if(creep.memory.role == 'harvester') {
-            creep.say(creep.name + " harvesting!");
+            //creep.say(creep.name + " harvesting!");
             harvester(creep);
         }
 
