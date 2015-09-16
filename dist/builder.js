@@ -10,4 +10,4 @@ module.exports = function (creep) {
             creep.build(targets[0]);
         }
     }
-}
+};

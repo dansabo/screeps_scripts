@@ -22,11 +22,11 @@ module.exports = function() {
         createRole(Roles.builder);
     }
     createRole(Roles.harvester);
-}
+};
 
 var createRole = function(role) {
     if(Game.spawns.Spawn1.canCreateCreep(role.body) == OK) {
         Game.spawns.Spawn1.createCreep(role.body, null, {role: role.name});
         console.log("Spawning a new " + role.name +"!")
     }
-}
+};

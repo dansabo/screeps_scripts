@@ -1,6 +1,7 @@
 var harvester = require('harvester'),
     builder = require('builder'),
-    spawner = require('spawner');
+    spawner = require('spawner'),
+    guard = require('guard');
 
 module.exports = function () {
     for(var name in Game.creeps) {
@@ -21,15 +22,11 @@ module.exports = function () {
         // 	}
 
         if(creep.memory.role == 'guard') {
-            var targets = creep.room.find(FIND_HOSTILE_CREEPS);
-            if(targets.length) {
-                creep.moveTo(targets[0]);
-                creep.attack(targets[0]);
-            }
+            guard(creep);
         }
     }
 
     for(var name in Game.spawns) {
         spawner(Game.spawns[name]);
     }
-}
+};
