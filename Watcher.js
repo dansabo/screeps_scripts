@@ -6,14 +6,14 @@ var harvester = require('harvester'),
 module.exports = function () {
     for(var name in Game.creeps) {
         var creep = Game.creeps[name];
-        console.log(creep.memory);
+
         if(creep.memory.role == 'harvester') {
-            console.log(creep.name + " harvesting!");
+            creep.say(creep.name + " harvesting!");
             harvester(creep);
         }
 
         if(creep.memory.role == 'builder') {
-            console.log(creep.name + " building!");
+            //console.log(creep.name + " building!");
             builder(creep);
         }
 
